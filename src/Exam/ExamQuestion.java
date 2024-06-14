@@ -18,6 +18,10 @@ public class ExamQuestion {
         grade = randomizeGrade();
     }
 
+    //***GETTER METHODS***----------------------------------------------------------------------------------------------
+    public ArrayList<ExamQuestion> getExamQuestionList(){
+        return examQuestionList;
+    }
     //***METHODS***-----------------------------------------------------------------------------------------------------
     public char randomizeGrade(){
         char[] gradeList = {'A', 'B', 'C', 'D', 'E', 'F'};
@@ -31,10 +35,6 @@ public class ExamQuestion {
         } else {
             throw new IllegalArgumentException("There can only be 14 exam questions");
         }
-    }
-
-    public ArrayList<ExamQuestion> getExamQuestionList(){
-        return examQuestionList;
     }
 
     //***TO STRING METHOD***--------------------------------------------------------------------------------------------
